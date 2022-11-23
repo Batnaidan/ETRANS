@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "0.1.0",
+
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "action": {},
+  "description": "A plain text description",
+  "chrome_settings_overrides": {},
+  "chrome_url_overrides": {},
+  "commands": {},
+  "content_capabilities": "",
+  "content_security_policy": {},
+
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ],
+
+  "converted_from_user_script": "",
+  "cross_origin_embedder_policy": { "value": "require-corp" },
+  "cross_origin_opener_policy": { "value": "same-origin" },
+  "current_locale": "",
+  "externally_connectable": {
+    "matches": ["*://*.example.com/*"]
+  },
+  "file_system_provider_capabilities": {
+    "configurable": true,
+    "multiple_mounts": true,
+    "source": "network"
+  },
+  "host_permissions": [],
+  "import": [{ "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" }],
+  "input_components": "",
+  "key": "publicKey",
+  "nacl_modules": [],
+  "natively_connectable": "",
+  "permissions": ["tabs"],
+  "platforms": "",
+  "requirements": {},
+  "sandbox": [],
+  "update_url": "https://path/to/updateInfo.xml",
+  "version_name": "A"
+}

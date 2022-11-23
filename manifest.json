@@ -1,0 +1,17 @@
+{
+  "name": "ETRANS",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "Extension That Removes Advertisement from News Sites",
+  "offline_enabled": true,
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://ikon.mn/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/options.html",
+    "default_icon": "images/128.png"
+  }
+}
